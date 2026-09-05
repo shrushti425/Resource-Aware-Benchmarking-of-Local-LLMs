@@ -1,6 +1,5 @@
 # Resource-Aware Benchmarking of Local LLMs on Apple Silicon for Offline AI and RAG Applications
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Platform: macOS Apple Silicon](https://img.shields.io/badge/platform-macOS_M1%2FM2%2FM3-brightgreen.svg)](https://support.apple.com/en-us/HT211814)
 
@@ -207,9 +206,3 @@ Provides an empirical baseline and automated evaluation harness for selecting lo
 - **Unified RAM Boundary:** 8 GB RAM caps practical model size to <=4B.
 - **Automated Evaluation:** Metrics focus on deterministic string overlap, exact match, and schema compliance rather than human qualitative feedback.
 - **Runtime Variance:** macOS background process activity can introduce minor timing noise in latency measurements.
-
----
-
-## 11. License
-
-MIT License. See [LICENSE](LICENSE) for details.
