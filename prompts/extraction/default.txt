@@ -1,0 +1,5 @@
+Extract all entities of type '{entity_type}' from the text below as a comma-separated list.
+
+Text: {text}
+
+Extracted {entity_type}:

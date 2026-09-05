@@ -1,0 +1,6 @@
+Answer the following question based on the provided context concisely and accurately.
+
+Context: {context}
+Question: {question}
+
+Answer:

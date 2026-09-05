@@ -1,0 +1,44 @@
+# Dataset Configuration & Offline Defaults
+
+datasets:
+  qa:
+    name: "SQuAD v2.0 Subset"
+    description: "Question Answering benchmark dataset"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/qa_dataset.json"
+
+  classification:
+    name: "AG News / Sentiment Subset"
+    description: "Multi-class text classification dataset"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/classification_dataset.json"
+
+  summarization:
+    name: "CNN/DailyMail Abstractive Summarization Subset"
+    description: "Text summarization benchmark dataset"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/summarization_dataset.json"
+
+  extraction:
+    name: "Named Entity / Key Fact Extraction Subset"
+    description: "Information extraction benchmark dataset"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/extraction_dataset.json"
+
+  json:
+    name: "Structured Output / Schema Compliance Benchmark"
+    description: "JSON format generation benchmark"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/json_dataset.json"
+
+  reasoning:
+    name: "GSM8K / Math Logic Benchmark Subset"
+    description: "Multi-step reasoning and math logic task"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/reasoning_dataset.json"
+
+  rag:
+    name: "Tech Knowledge Base RAG Benchmark"
+    description: "Offline RAG evaluation corpus and Q&A pairs"
+    source: "local_synthetic_or_hf"
+    local_file: "datasets/rag_dataset.json"

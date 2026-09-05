@@ -1,0 +1,39 @@
+# Benchmark Experiment Profiles & Defaults
+
+profiles:
+  quick:
+    description: "Rapid dev profile for sanity checks and mock testing"
+    samples_per_task: 15
+    warmup_runs: 1
+    iterations: 1
+
+  standard:
+    description: "Main research benchmark for 1B-4B models"
+    samples_per_task: 50
+    warmup_runs: 2
+    iterations: 1
+
+  full:
+    description: "Comprehensive evaluation profile for selected top models"
+    samples_per_task: 100
+    warmup_runs: 2
+    iterations: 2
+
+defaults:
+  temperature: 0.0
+  top_p: 0.9
+  seed: 42
+  max_output_tokens: 256
+  context_length: 2048
+  n_gpu_layers: -1 # -1 offloads all layers to Metal GPU on Apple Silicon
+  cpu_threads: 4
+  batch_size: 512
+
+tasks:
+  - qa
+  - classification
+  - summarization
+  - extraction
+  - json
+  - reasoning
+  - rag

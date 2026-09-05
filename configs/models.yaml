@@ -1,0 +1,111 @@
+# Local LLM Model Registry Configuration
+# Targeted specifically for Apple Silicon M2 (8GB Unified Memory)
+
+models:
+  - id: "qwen2.5-0.5b-q4"
+    family: "Qwen"
+    name: "Qwen2.5-0.5B-Instruct"
+    params_b: 0.5
+    repo_id: "Qwen/Qwen2.5-0.5B-Instruct-GGUF"
+    filename: "qwen2.5-0.5b-instruct-q4_k_m.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 0.39
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "high"
+
+  - id: "llama-3.2-1b-q4"
+    family: "Llama"
+    name: "Llama-3.2-1B-Instruct"
+    params_b: 1.23
+    repo_id: "bartowski/Llama-3.2-1B-Instruct-GGUF"
+    filename: "Llama-3.2-1B-Instruct-Q4_K_M.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 0.81
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "high"
+
+  - id: "llama-3.2-1b-q8"
+    family: "Llama"
+    name: "Llama-3.2-1B-Instruct (Q8)"
+    params_b: 1.23
+    repo_id: "bartowski/Llama-3.2-1B-Instruct-GGUF"
+    filename: "Llama-3.2-1B-Instruct-Q8_0.gguf"
+    quantization: "Q8_0"
+    file_size_gb: 1.32
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "high"
+
+  - id: "qwen2.5-1.5b-q4"
+    family: "Qwen"
+    name: "Qwen2.5-1.5B-Instruct"
+    params_b: 1.54
+    repo_id: "Qwen/Qwen2.5-1.5B-Instruct-GGUF"
+    filename: "qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 0.98
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "high"
+
+  - id: "gemma-2-2b-q4"
+    family: "Gemma"
+    name: "Gemma-2-2B-IT"
+    params_b: 2.61
+    repo_id: "bartowski/gemma-2-2b-it-GGUF"
+    filename: "gemma-2-2b-it-Q4_K_M.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 1.65
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "medium"
+
+  - id: "llama-3.2-3b-q4"
+    family: "Llama"
+    name: "Llama-3.2-3B-Instruct"
+    params_b: 3.21
+    repo_id: "bartowski/Llama-3.2-3B-Instruct-GGUF"
+    filename: "Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 2.02
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "medium"
+
+  - id: "llama-3.2-3b-q8"
+    family: "Llama"
+    name: "Llama-3.2-3B-Instruct (Q8)"
+    params_b: 3.21
+    repo_id: "bartowski/Llama-3.2-3B-Instruct-GGUF"
+    filename: "Llama-3.2-3B-Instruct-Q8_0.gguf"
+    quantization: "Q8_0"
+    file_size_gb: 3.42
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "medium"
+
+  - id: "qwen2.5-3b-q4"
+    family: "Qwen"
+    name: "Qwen2.5-3B-Instruct"
+    params_b: 3.09
+    repo_id: "Qwen/Qwen2.5-3B-Instruct-GGUF"
+    filename: "qwen2.5-3b-instruct-q4_k_m.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 1.93
+    recommended_context: 2048
+    enabled: true
+    feasibility_rating: "medium"
+
+  - id: "mistral-7b-q4"
+    family: "Mistral"
+    name: "Mistral-7B-Instruct-v0.3"
+    params_b: 7.24
+    repo_id: "bartowski/Mistral-7B-Instruct-v0.3-GGUF"
+    filename: "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf"
+    quantization: "Q4_K_M"
+    file_size_gb: 4.37
+    recommended_context: 2048
+    enabled: false
+    feasibility_rating: "impractical_8gb"

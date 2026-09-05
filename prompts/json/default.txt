@@ -1,0 +1,6 @@
+Generate a valid JSON object matching the requested schema. Respond ONLY with valid JSON and no markdown formatting or extra text.
+
+Schema requirement: {schema_description}
+Input data: {text}
+
+JSON Output:

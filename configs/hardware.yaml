@@ -1,0 +1,20 @@
+# Hardware Profile & Safety Boundaries for Apple Silicon M2 8GB
+
+target_hardware:
+  device_name: "MacBook Air M2"
+  chip_family: "Apple Silicon"
+  total_memory_gb: 8.0
+  architecture: "arm64"
+  os: "macOS"
+
+safety_thresholds:
+  max_model_file_size_gb: 3.8
+  min_available_memory_gb: 1.2
+  warn_swap_usage_gb: 1.5
+  infeasible_memory_threshold_gb: 5.5
+
+metal_acceleration:
+  prefer_metal: true
+  fallback_to_cpu_on_error: true
+  n_gpu_layers_metal: -1
+  n_gpu_layers_cpu: 0

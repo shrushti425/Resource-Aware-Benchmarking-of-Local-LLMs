@@ -1,0 +1,5 @@
+Provide a concise 2-3 sentence summary capturing the core facts of the following text.
+
+Text: {text}
+
+Summary:
